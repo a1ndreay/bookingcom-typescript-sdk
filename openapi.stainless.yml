@@ -12,7 +12,7 @@ organization:
 targets:
   typescript:
     package_name: booking.com
-    production_repo: a1ndreay/booking.com
+    production_repo: a1ndreay/bookingcom-client-sdk
     publish:
       npm: true
 

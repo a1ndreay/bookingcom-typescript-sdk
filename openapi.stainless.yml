@@ -12,9 +12,9 @@ organization:
 targets:
   typescript:
     package_name: booking.com
-    production_repo: null
+    production_repo: a1ndreay/booking.com
     publish:
-      npm: false
+      npm: true
 
 # `environments` are a map of the name of the environment (e.g. "sandbox",
 # "production") to the corresponding url to use.

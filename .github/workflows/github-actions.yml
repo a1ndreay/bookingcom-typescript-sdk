@@ -14,5 +14,5 @@ jobs:
         with:
           stainless_api_key: ${{ secrets.STAINLESS_API_KEY }}
           input_path: './openapi.booking.com.json'
-          # config_path: './openapi.stainless.yml'
+          config_path: './openapi.stainless.yml'
           project_name: 'booking.com'

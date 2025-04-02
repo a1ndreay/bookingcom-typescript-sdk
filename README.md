@@ -27,9 +27,9 @@ const client = new BookingCom({
 });
 
 async function main() {
-  const hotel = await client.hotels.list();
+  const hotels = await client.hotels.list();
 
-  console.log(hotel.hotels);
+  console.log(hotels.hotels);
 }
 
 main();
@@ -48,7 +48,7 @@ const client = new BookingCom({
 });
 
 async function main() {
-  const hotel: BookingCom.HotelListResponse = await client.hotels.list();
+  const hotels: BookingCom.HotelListResponse = await client.hotels.list();
 }
 
 main();
@@ -65,7 +65,7 @@ a subclass of `APIError` will be thrown:
 <!-- prettier-ignore -->
 ```ts
 async function main() {
-  const hotel = await client.hotels.list().catch(async (err) => {
+  const hotels = await client.hotels.list().catch(async (err) => {
     if (err instanceof BookingCom.APIError) {
       console.log(err.status); // 400
       console.log(err.name); // BadRequestError
@@ -152,9 +152,9 @@ const response = await client.hotels.list().asResponse();
 console.log(response.headers.get('X-My-Header'));
 console.log(response.statusText); // access the underlying Response object
 
-const { data: hotel, response: raw } = await client.hotels.list().withResponse();
+const { data: hotels, response: raw } = await client.hotels.list().withResponse();
 console.log(raw.headers.get('X-My-Header'));
-console.log(hotel.hotels);
+console.log(hotels.hotels);
 ```
 
 ### Logging

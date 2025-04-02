@@ -11,8 +11,8 @@ organization:
 # whether to emit the Node SDK and what it's package name should be.
 targets:
   typescript:
-    package_name: booking.com
-    production_repo: a1ndreay/bookingcom-client-sdk
+    package_name: booking.com-typescript
+    production_repo: a1ndreay/bookingcom-typescript-sdk
     publish:
       npm: true
 

@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'booking.com/core/api-promise';
+import { APIPromise } from 'booking.com-typescript/core/api-promise';
 
 import util from 'node:util';
-import BookingCom from 'booking.com';
-import { APIUserAbortError } from 'booking.com';
+import BookingCom from 'booking.com-typescript';
+import { APIUserAbortError } from 'booking.com-typescript';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

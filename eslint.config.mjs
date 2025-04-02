@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^booking.com(/.*)?',
+              regex: '^booking.com-typescript(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

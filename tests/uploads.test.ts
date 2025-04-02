@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'booking.com/internal/to-file';
-import { toFile } from 'booking.com/core/uploads';
+import type { ResponseLike } from 'booking.com-typescript/internal/to-file';
+import { toFile } from 'booking.com-typescript/core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('booking.com/core/uploads');
+    const uploads = await import('booking.com-typescript/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(

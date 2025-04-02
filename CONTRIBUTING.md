@@ -55,12 +55,12 @@ $ cd bookingcom-client-sdk
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link booking.com
+$ yarn link booking.com-typescript
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global booking.com
+$ pnpm link -—global booking.com-typescript
 ```
 
 ## Running tests

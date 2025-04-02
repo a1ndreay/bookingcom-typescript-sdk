@@ -1,5 +1,5 @@
 {
-  "name": "booking.com",
+  "name": "booking.com-typescript",
   "version": "0.0.1-alpha.0",
   "description": "The official TypeScript library for the Booking Com API",
   "author": "Booking Com <dev-feedback@booking.com.com>",
@@ -50,8 +50,8 @@
     "synckit": "0.8.8"
   },
   "imports": {
-    "booking.com": ".",
-    "booking.com/*": "./src/*"
+    "booking.com-typescript": ".",
+    "booking.com-typescript/*": "./src/*"
   },
   "exports": {
     ".": {

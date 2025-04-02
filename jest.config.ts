@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^booking.com$': '<rootDir>/src/index.ts',
-    '^booking.com/(.*)$': '<rootDir>/src/$1',
+    '^booking.com-typescript$': '<rootDir>/src/index.ts',
+    '^booking.com-typescript/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

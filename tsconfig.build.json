@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "booking.com/*": ["dist/src/*"],
-      "booking.com": ["dist/src/index.ts"],
+      "booking.com-typescript/*": ["dist/src/*"],
+      "booking.com-typescript": ["dist/src/index.ts"],
     },
     "noEmit": false,
     "declaration": true,

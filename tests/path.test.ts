@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'booking.com/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from 'booking.com-typescript/internal/utils/path';
 import { inspect } from 'node:util';
 
 describe('path template tag function', () => {

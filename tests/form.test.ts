@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'booking.com/internal/uploads';
-import { toFile } from 'booking.com/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'booking.com-typescript/internal/uploads';
+import { toFile } from 'booking.com-typescript/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

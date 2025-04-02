@@ -1,12 +1,12 @@
 {
-  "name": "booking.com",
+  "name": "booking.com-typescript",
   "version": "0.1.0-alpha.1",
   "description": "The official TypeScript library for the Booking Com API",
   "author": "Booking Com <dev-feedback@booking.com.com>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
-  "repository": "github:a1ndreay/booking.com",
+  "repository": "github:a1ndreay/bookingcom-typescript-sdk",
   "license": "Apache-2.0",
   "packageManager": "yarn@1.22.22",
   "files": [
@@ -50,8 +50,8 @@
     "synckit": "0.8.8"
   },
   "imports": {
-    "booking.com": ".",
-    "booking.com/*": "./src/*"
+    "booking.com-typescript": ".",
+    "booking.com-typescript/*": "./src/*"
   },
   "exports": {
     ".": {

@@ -65,6 +65,8 @@ export namespace HotelListResponse {
 
     isFavourite?: boolean;
 
+    photo?: string;
+
     rating?: number;
 
     stars?: number;

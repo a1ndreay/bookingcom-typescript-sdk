@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.1.0-alpha.4 (2025-04-03)
+
+Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
+
+### Features
+
+* **api:** api update ([#15](https://github.com/a1ndreay/bookingcom-typescript-sdk/issues/15)) ([0f0f21c](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/0f0f21c5cf8620e5daff3d82dedb04e7ee5355db))
+
+
+### Bug Fixes
+
+* **client:** send `X-Stainless-Timeout` in seconds ([#12](https://github.com/a1ndreay/bookingcom-typescript-sdk/issues/12)) ([23d0abb](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/23d0abba10cd9359059807f21a769671b37d2e8e))
+
+
+### Chores
+
+* **internal:** add aliases for Record and Array ([#14](https://github.com/a1ndreay/bookingcom-typescript-sdk/issues/14)) ([7cd4439](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/7cd443982b8fa3582b045308b5af5e6e0cd1575f))
+
 ## 0.1.0-alpha.3 (2025-04-03)
 
 Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)

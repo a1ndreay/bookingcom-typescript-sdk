@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.0-alpha.5 (2025-04-05)
+
+Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
+
+### Features
+
+* **api:** manual updates ([#20](https://github.com/a1ndreay/bookingcom-typescript-sdk/issues/20)) ([6be93db](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/6be93dbbfa0daf20a8195dde2cc38cb968a659f9))
+
+
+### Bug Fixes
+
+* **api:** improve type resolution when importing as a package ([#17](https://github.com/a1ndreay/bookingcom-typescript-sdk/issues/17)) ([8196c77](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/8196c770850f4d62e6cd88b394c3f5c6db5bd6b9))
+* **mcp:** remove unused tools.ts ([#19](https://github.com/a1ndreay/bookingcom-typescript-sdk/issues/19)) ([589930e](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/589930eca4e9b0b4c078111257dc3d572d77bd09))
+
 ## 0.1.0-alpha.4 (2025-04-03)
 
 Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)

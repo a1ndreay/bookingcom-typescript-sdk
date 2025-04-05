@@ -1,4 +1,4 @@
-configured_endpoints: 4
-openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/self-a1ndreay%2Fbooking.com-9b583796718997ab471cadf5e2619bd3a799034df5b3e81c39b492ca0e36123a.yml
-openapi_spec_hash: 41b83209a8779d7cca9c6e61bae7f782
-config_hash: 6f707c299d48f78ff2bf8a1720c69135
+configured_endpoints: 8
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/self-a1ndreay%2Fbooking.com-f23108c8fae7abae34d00b663c37e1378780580281cf83a59c93ca22c624bc51.yml
+openapi_spec_hash: 2acf72e004230a247b4055358012a03b
+config_hash: de09f42daf6a64bb591d24ba72791e23

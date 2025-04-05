@@ -20,6 +20,14 @@ import { APIPromise } from './core/api-promise';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
+import {
+  OperationListResponse,
+  OperationRetrieveParams,
+  OperationRetrieveResponse,
+  Operations,
+} from './resources/operations';
+import { OrderCreateParams, OrderCreateResponse, Orders } from './resources/orders';
+import { Pricing, PricingCalculateParams, PricingCalculateResponse } from './resources/pricing';
 import { readEnv } from './internal/utils/env';
 import { formatRequestDetails, loggerFor } from './internal/utils/log';
 import { isEmptyObj } from './internal/utils/values';
@@ -681,8 +689,14 @@ export class BookingCom {
   static toFile = Uploads.toFile;
 
   hotels: API.Hotels = new API.Hotels(this);
+  orders: API.Orders = new API.Orders(this);
+  operations: API.Operations = new API.Operations(this);
+  pricing: API.Pricing = new API.Pricing(this);
 }
 BookingCom.Hotels = Hotels;
+BookingCom.Orders = Orders;
+BookingCom.Operations = Operations;
+BookingCom.Pricing = Pricing;
 export declare namespace BookingCom {
   export type RequestOptions = Opts.RequestOptions;
 
@@ -691,5 +705,24 @@ export declare namespace BookingCom {
     type HotelRetrieveResponse as HotelRetrieveResponse,
     type HotelListResponse as HotelListResponse,
     type HotelListParams as HotelListParams,
+  };
+
+  export {
+    Orders as Orders,
+    type OrderCreateResponse as OrderCreateResponse,
+    type OrderCreateParams as OrderCreateParams,
+  };
+
+  export {
+    Operations as Operations,
+    type OperationRetrieveResponse as OperationRetrieveResponse,
+    type OperationListResponse as OperationListResponse,
+    type OperationRetrieveParams as OperationRetrieveParams,
+  };
+
+  export {
+    Pricing as Pricing,
+    type PricingCalculateResponse as PricingCalculateResponse,
+    type PricingCalculateParams as PricingCalculateParams,
   };
 }

@@ -314,6 +314,19 @@ describe('instantiate client', () => {
       const client = new BookingCom({ apiKey: 'My API Key' });
       expect(client.baseURL).toEqual('http://localhost:5006/v1');
     });
+
+    test('env variable with environment', () => {
+      process.env['BOOKING_COM_BASE_URL'] = 'https://example.com/from_env';
+
+      expect(
+        () => new BookingCom({ apiKey: 'My API Key', environment: 'production' }),
+      ).toThrowErrorMatchingInlineSnapshot(
+        `"Ambiguous URL; The \`baseURL\` option (or BOOKING_COM_BASE_URL env var) and the \`environment\` option are given. If you want to use the environment you must pass baseURL: null"`,
+      );
+
+      const client = new BookingCom({ apiKey: 'My API Key', baseURL: null, environment: 'production' });
+      expect(client.baseURL).toEqual('http://localhost:5006/v1');
+    });
   });
 
   test('maxRetries option is correctly set', () => {

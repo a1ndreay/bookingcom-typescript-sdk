@@ -24,6 +24,7 @@ import BookingCom from 'booking.com-typescript';
 
 const client = new BookingCom({
   apiKey: process.env['BOOKING_COM_API_KEY'], // This is the default and can be omitted
+  environment: 'development', // defaults to 'production'
 });
 
 async function main() {
@@ -45,6 +46,7 @@ import BookingCom from 'booking.com-typescript';
 
 const client = new BookingCom({
   apiKey: process.env['BOOKING_COM_API_KEY'], // This is the default and can be omitted
+  environment: 'development', // defaults to 'production'
 });
 
 async function main() {

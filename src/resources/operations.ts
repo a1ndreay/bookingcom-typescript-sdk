@@ -35,41 +35,14 @@ export interface OperationRetrieveResponse {
 
   operationId?: string;
 
-  Result?: OperationRetrieveResponse.Error | OperationRetrieveResponse.Response;
+  Result?: OperationRetrieveResponse.Result;
 
   status?: 'pending' | 'error' | 'completed';
 }
 
 export namespace OperationRetrieveResponse {
-  export interface Error {
-    /**
-     * [google.rpc.status] Error model suitable for both REST APIs and RPC APIs
-     */
-    Error: Error.Error;
-  }
-
-  export namespace Error {
-    /**
-     * [google.rpc.status] Error model suitable for both REST APIs and RPC APIs
-     */
-    export interface Error {
-      /**
-       * The status code, which should be an enum value of [google.rpc.Code]
-       */
-      Code?: number;
-
-      Details?: unknown;
-
-      /**
-       * A developer-facing error message, which should be in English. Any user-facing
-       * error message should be localized and sent in the details field.
-       */
-      Message?: string;
-    }
-  }
-
-  export interface Response {
-    Response: unknown;
+  export interface Result {
+    type: string;
   }
 }
 

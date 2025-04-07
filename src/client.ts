@@ -33,11 +33,26 @@ import { formatRequestDetails, loggerFor } from './internal/utils/log';
 import { isEmptyObj } from './internal/utils/values';
 import { HotelListParams, HotelListResponse, HotelRetrieveResponse, Hotels } from './resources/hotels/hotels';
 
+const environments = {
+  production: 'http://localhost:5006/v1',
+  development: 'http://192.168.43.213:5006/v1',
+};
+type Environment = keyof typeof environments;
+
 export interface ClientOptions {
   /**
    * Defaults to process.env['BOOKING_COM_API_KEY'].
    */
   apiKey?: string | null | undefined;
+
+  /**
+   * Specifies the environment to use for the API.
+   *
+   * Each environment maps to a different base URL:
+   * - `production` corresponds to `http://localhost:5006/v1`
+   * - `development` corresponds to `http://192.168.43.213:5006/v1`
+   */
+  environment?: Environment | undefined;
 
   /**
    * Override the default base URL for the API, e.g., "https://api.example.com/v2/"
@@ -128,6 +143,7 @@ export class BookingCom {
    * API Client for interfacing with the Booking Com API.
    *
    * @param {string | null | undefined} [opts.apiKey=process.env['BOOKING_COM_API_KEY'] ?? null]
+   * @param {Environment} [opts.environment=production] - Specifies the environment URL to use for the API.
    * @param {string} [opts.baseURL=process.env['BOOKING_COM_BASE_URL'] ?? http://localhost:5006/v1] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
@@ -144,10 +160,17 @@ export class BookingCom {
     const options: ClientOptions = {
       apiKey,
       ...opts,
-      baseURL: baseURL || `http://localhost:5006/v1`,
+      baseURL,
+      environment: opts.environment ?? 'production',
     };
 
-    this.baseURL = options.baseURL!;
+    if (baseURL && opts.environment) {
+      throw new Errors.BookingComError(
+        'Ambiguous URL; The `baseURL` option (or BOOKING_COM_BASE_URL env var) and the `environment` option are given. If you want to use the environment you must pass baseURL: null',
+      );
+    }
+
+    this.baseURL = options.baseURL || environments[options.environment || 'production'];
     this.timeout = options.timeout ?? BookingCom.DEFAULT_TIMEOUT /* 1 minute */;
     this.logger = options.logger ?? console;
     const defaultLogLevel = 'warn';

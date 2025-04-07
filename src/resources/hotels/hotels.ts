@@ -37,6 +37,8 @@ export interface HotelRetrieveResponse {
 
   isFavourite?: boolean;
 
+  location?: string;
+
   /**
    * ref token to fetch the hotel page
    */

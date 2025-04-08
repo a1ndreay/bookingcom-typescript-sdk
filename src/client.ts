@@ -35,7 +35,7 @@ import { HotelListParams, HotelListResponse, HotelRetrieveResponse, Hotels } fro
 
 const environments = {
   production: 'http://localhost:5006/v1',
-  development: 'http://192.168.43.213:5006/v1',
+  development: 'http://192.168.0.100:5006/v1',
 };
 type Environment = keyof typeof environments;
 
@@ -50,7 +50,7 @@ export interface ClientOptions {
    *
    * Each environment maps to a different base URL:
    * - `production` corresponds to `http://localhost:5006/v1`
-   * - `development` corresponds to `http://192.168.43.213:5006/v1`
+   * - `development` corresponds to `http://192.168.0.100:5006/v1`
    */
   environment?: Environment | undefined;
 
@@ -207,11 +207,11 @@ export class BookingCom {
     );
   }
 
-  protected authHeaders(opts: FinalRequestOptions): Headers | undefined {
+  protected authHeaders(opts: FinalRequestOptions): NullableHeaders | undefined {
     if (this.apiKey == null) {
       return undefined;
     }
-    return new Headers({ Authorization: `Bearer ${this.apiKey}` });
+    return buildHeaders([{ Authorization: `Bearer ${this.apiKey}` }]);
   }
 
   /**

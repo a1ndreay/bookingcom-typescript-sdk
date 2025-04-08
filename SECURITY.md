@@ -20,7 +20,7 @@ or products provided by Booking Com please follow the respective company's secur
 
 ### Booking Com Terms and Policies
 
-Please contact dev-feedback@booking.com.com for any questions or concerns regarding security of our services.
+Please contact dev-feedback@booking.com for any questions or concerns regarding security of our services.
 
 ---
 

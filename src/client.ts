@@ -35,7 +35,7 @@ import { HotelListParams, HotelListResponse, HotelRetrieveResponse, Hotels } fro
 
 const environments = {
   production: 'http://localhost:5006/v1',
-  development: 'http://192.168.43.213:5006/v1',
+  development: 'http://192.168.0.100:5006/v1',
 };
 type Environment = keyof typeof environments;
 
@@ -50,7 +50,7 @@ export interface ClientOptions {
    *
    * Each environment maps to a different base URL:
    * - `production` corresponds to `http://localhost:5006/v1`
-   * - `development` corresponds to `http://192.168.43.213:5006/v1`
+   * - `development` corresponds to `http://192.168.0.100:5006/v1`
    */
   environment?: Environment | undefined;
 

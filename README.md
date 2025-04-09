@@ -23,6 +23,7 @@ The full API of this library can be found in [api.md](api.md).
 import BookingCom from 'booking.com-typescript';
 
 const client = new BookingCom({
+  accessToken: process.env['BOOKING_COM_API_KEY'], // This is the default and can be omitted
   environment: 'development', // or 'production' | 'sandbox'; defaults to 'production'
 });
 
@@ -44,6 +45,7 @@ This library includes TypeScript definitions for all request params and response
 import BookingCom from 'booking.com-typescript';
 
 const client = new BookingCom({
+  accessToken: process.env['BOOKING_COM_API_KEY'], // This is the default and can be omitted
   environment: 'development', // or 'production' | 'sandbox'; defaults to 'production'
 });
 

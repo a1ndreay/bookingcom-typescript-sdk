@@ -2,7 +2,10 @@
 
 import BookingCom from 'booking.com-typescript';
 
-const client = new BookingCom({ baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010' });
+const client = new BookingCom({
+  accessToken: 'My Access Token',
+  baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
+});
 
 describe('resource operations', () => {
   // skipped: tests are disabled for the time being

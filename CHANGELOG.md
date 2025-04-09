@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.11 (2025-04-09)
+
+Full Changelog: [v0.1.0-alpha.10...v0.1.0-alpha.11](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.10...v0.1.0-alpha.11)
+
+### Features
+
+* **api:** add new environment ([#38](https://github.com/a1ndreay/bookingcom-typescript-sdk/issues/38)) ([78d292f](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/78d292fbeec39fac9bf7fd8761656db726f9e898))
+
 ## 0.1.0-alpha.10 (2025-04-08)
 
 Full Changelog: [v0.1.0-alpha.9...v0.1.0-alpha.10](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.9...v0.1.0-alpha.10)

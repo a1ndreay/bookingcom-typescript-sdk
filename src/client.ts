@@ -44,7 +44,7 @@ export interface ClientOptions {
   /**
    * Defaults to process.env['BOOKING_COM_API_KEY'].
    */
-  apiKey?: string | null | undefined;
+  accessToken?: string | null | undefined;
 
   /**
    * Specifies the environment to use for the API.
@@ -127,7 +127,7 @@ export interface ClientOptions {
  * API Client for interfacing with the Booking Com API.
  */
 export class BookingCom {
-  apiKey: string | null;
+  accessToken: string | null;
 
   baseURL: string;
   maxRetries: number;
@@ -144,7 +144,7 @@ export class BookingCom {
   /**
    * API Client for interfacing with the Booking Com API.
    *
-   * @param {string | null | undefined} [opts.apiKey=process.env['BOOKING_COM_API_KEY'] ?? null]
+   * @param {string | null | undefined} [opts.accessToken=process.env['BOOKING_COM_API_KEY'] ?? null]
    * @param {Environment} [opts.environment=production] - Specifies the environment URL to use for the API.
    * @param {string} [opts.baseURL=process.env['BOOKING_COM_BASE_URL'] ?? http://localhost:5006/v1] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
@@ -156,11 +156,11 @@ export class BookingCom {
    */
   constructor({
     baseURL = readEnv('BOOKING_COM_BASE_URL'),
-    apiKey = readEnv('BOOKING_COM_API_KEY') ?? null,
+    accessToken = readEnv('BOOKING_COM_API_KEY') ?? null,
     ...opts
   }: ClientOptions = {}) {
     const options: ClientOptions = {
-      apiKey,
+      accessToken,
       ...opts,
       baseURL,
       environment: opts.environment ?? 'production',
@@ -189,7 +189,7 @@ export class BookingCom {
 
     this._options = options;
 
-    this.apiKey = apiKey;
+    this.accessToken = accessToken;
   }
 
   protected defaultQuery(): Record<string, string | undefined> | undefined {
@@ -197,23 +197,7 @@ export class BookingCom {
   }
 
   protected validateHeaders({ values, nulls }: NullableHeaders) {
-    if (this.apiKey && values.get('authorization')) {
-      return;
-    }
-    if (nulls.has('authorization')) {
-      return;
-    }
-
-    throw new Error(
-      'Could not resolve authentication method. Expected the apiKey to be set. Or for the "Authorization" headers to be explicitly omitted',
-    );
-  }
-
-  protected authHeaders(opts: FinalRequestOptions): NullableHeaders | undefined {
-    if (this.apiKey == null) {
-      return undefined;
-    }
-    return buildHeaders([{ Authorization: `Bearer ${this.apiKey}` }]);
+    return;
   }
 
   /**
@@ -646,7 +630,6 @@ export class BookingCom {
         ...(options.timeout ? { 'X-Stainless-Timeout': String(Math.trunc(options.timeout / 1000)) } : {}),
         ...getPlatformHeaders(),
       },
-      this.authHeaders(options),
       this._options.defaultHeaders,
       bodyHeaders,
       options.headers,

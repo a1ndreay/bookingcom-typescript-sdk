@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0-alpha.13 (2025-04-10)
+
+Full Changelog: [v0.1.0-alpha.12...v0.1.0-alpha.13](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.12...v0.1.0-alpha.13)
+
+### Chores
+
+* **internal:** improve node 18 shims ([1756a12](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/1756a125a13cfeafa36ba13d521dc68e4d4da843))
+* **internal:** reduce CI branch coverage ([06fbbcf](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/06fbbcf7ae0fd2cd8698820831198a25c674b2b6))
+* **internal:** upload builds and expand CI branch coverage ([03aee03](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/03aee03e386e03503b4d905e5066585af78cb490))
+
 ## 0.1.0-alpha.12 (2025-04-09)
 
 Full Changelog: [v0.1.0-alpha.11...v0.1.0-alpha.12](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.11...v0.1.0-alpha.12)

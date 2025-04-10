@@ -43,14 +43,14 @@ export namespace PricingCalculateParams {
     /**
      * RFC 3339, section 5.6
      */
-    CheckInDate?: string;
+    CheckInDate: string;
 
     /**
      * RFC 3339, section 5.6
      */
-    CheckOutDate?: string;
+    CheckOutDate: string;
 
-    hotelId?: string;
+    hotelId: string;
   }
 }
 

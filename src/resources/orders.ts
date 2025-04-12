@@ -24,9 +24,7 @@ export interface OrderCreateParams {
   /**
    * the way to create hotel booking transaction
    */
-  Params?: OrderCreateParams.Params;
-
-  userId?: string;
+  Params: OrderCreateParams.Params;
 }
 
 export namespace OrderCreateParams {
@@ -37,14 +35,14 @@ export namespace OrderCreateParams {
     /**
      * RFC 3339, section 5.6
      */
-    CheckInDate?: string;
+    CheckInDate: string;
 
     /**
      * RFC 3339, section 5.6
      */
-    CheckOutDate?: string;
+    CheckOutDate: string;
 
-    hotelId?: string;
+    hotelId: string;
   }
 }
 

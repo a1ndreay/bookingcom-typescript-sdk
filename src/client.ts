@@ -20,12 +20,7 @@ import { APIPromise } from './core/api-promise';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
-import {
-  OperationListResponse,
-  OperationRetrieveParams,
-  OperationRetrieveResponse,
-  Operations,
-} from './resources/operations';
+import { OperationListResponse, OperationRetrieveResponse, Operations } from './resources/operations';
 import { OrderCreateParams, OrderCreateResponse, Orders } from './resources/orders';
 import { Pricing, PricingCalculateParams, PricingCalculateResponse } from './resources/pricing';
 import { readEnv } from './internal/utils/env';
@@ -742,7 +737,6 @@ export declare namespace BookingCom {
     Operations as Operations,
     type OperationRetrieveResponse as OperationRetrieveResponse,
     type OperationListResponse as OperationListResponse,
-    type OperationRetrieveParams as OperationRetrieveParams,
   };
 
   export {

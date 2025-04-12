@@ -36,7 +36,7 @@ Types:
 
 Methods:
 
-- <code title="get /operations/{operationId}">client.operations.<a href="./src/resources/operations.ts">retrieve</a>(operationID, { ...params }) -> OperationRetrieveResponse</code>
+- <code title="get /operations/{operationId}">client.operations.<a href="./src/resources/operations.ts">retrieve</a>(operationID) -> OperationRetrieveResponse</code>
 - <code title="get /operations">client.operations.<a href="./src/resources/operations.ts">list</a>() -> OperationListResponse</code>
 
 # Pricing

@@ -9,10 +9,8 @@ const client = new BookingCom({
 
 describe('resource operations', () => {
   // skipped: tests are disabled for the time being
-  test.skip('retrieve: only required params', async () => {
-    const responsePromise = client.operations.retrieve('operationId', {
-      query_operationId: '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
-    });
+  test.skip('retrieve', async () => {
+    const responsePromise = client.operations.retrieve('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e');
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -20,13 +18,6 @@ describe('resource operations', () => {
     const dataAndResponse = await responsePromise.withResponse();
     expect(dataAndResponse.data).toBe(response);
     expect(dataAndResponse.response).toBe(rawResponse);
-  });
-
-  // skipped: tests are disabled for the time being
-  test.skip('retrieve: required and optional params', async () => {
-    const response = await client.operations.retrieve('operationId', {
-      query_operationId: '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
-    });
   });
 
   // skipped: tests are disabled for the time being

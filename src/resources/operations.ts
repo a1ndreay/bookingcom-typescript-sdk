@@ -38,6 +38,10 @@ export interface OperationRetrieveResponse {
 
 export namespace OperationRetrieveResponse {
   export interface Result {
+    /**
+     * use Microsoft.AspNetCore.Mvc.NewtonsoftJson package, to handle polymorphic
+     * deserialization.
+     */
     type: string;
   }
 }

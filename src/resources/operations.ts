@@ -9,12 +9,8 @@ export class Operations extends APIResource {
   /**
    * returns the specified Operation
    */
-  retrieve(
-    operationID: string,
-    query: OperationRetrieveParams,
-    options?: RequestOptions,
-  ): APIPromise<OperationRetrieveResponse> {
-    return this._client.get(path`/operations/${operationID}`, { query, ...options });
+  retrieve(operationID: string, options?: RequestOptions): APIPromise<OperationRetrieveResponse> {
+    return this._client.get(path`/operations/${operationID}`, options);
   }
 
   /**
@@ -42,20 +38,19 @@ export interface OperationRetrieveResponse {
 
 export namespace OperationRetrieveResponse {
   export interface Result {
+    /**
+     * use Microsoft.AspNetCore.Mvc.NewtonsoftJson package, to handle polymorphic
+     * deserialization.
+     */
     type: string;
   }
 }
 
 export type OperationListResponse = Array<string>;
 
-export interface OperationRetrieveParams {
-  query_operationId: string;
-}
-
 export declare namespace Operations {
   export {
     type OperationRetrieveResponse as OperationRetrieveResponse,
     type OperationListResponse as OperationListResponse,
-    type OperationRetrieveParams as OperationRetrieveParams,
   };
 }

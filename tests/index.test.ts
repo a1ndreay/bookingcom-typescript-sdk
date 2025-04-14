@@ -312,13 +312,13 @@ describe('instantiate client', () => {
     test('empty env variable', () => {
       process.env['BOOKING_COM_BASE_URL'] = ''; // empty
       const client = new BookingCom({ accessToken: 'My Access Token' });
-      expect(client.baseURL).toEqual('http://localhost:5006/v1');
+      expect(client.baseURL).toEqual('http://localhost:8080/v1');
     });
 
     test('blank env variable', () => {
       process.env['BOOKING_COM_BASE_URL'] = '  '; // blank
       const client = new BookingCom({ accessToken: 'My Access Token' });
-      expect(client.baseURL).toEqual('http://localhost:5006/v1');
+      expect(client.baseURL).toEqual('http://localhost:8080/v1');
     });
 
     test('env variable with environment', () => {
@@ -335,7 +335,7 @@ describe('instantiate client', () => {
         baseURL: null,
         environment: 'production',
       });
-      expect(client.baseURL).toEqual('http://localhost:5006/v1');
+      expect(client.baseURL).toEqual('http://localhost:8080/v1');
     });
   });
 

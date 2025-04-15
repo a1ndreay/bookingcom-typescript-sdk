@@ -20,6 +20,7 @@ import { APIPromise } from './core/api-promise';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
+import { FavouriteListResponse, Favourites } from './resources/favourites';
 import { OperationListResponse, OperationRetrieveResponse, Operations } from './resources/operations';
 import { OrderCreateParams, OrderCreateResponse, Orders } from './resources/orders';
 import { Pricing, PricingCalculateParams, PricingCalculateResponse } from './resources/pricing';
@@ -709,11 +710,13 @@ export class BookingCom {
   static toFile = Uploads.toFile;
 
   hotels: API.Hotels = new API.Hotels(this);
+  favourites: API.Favourites = new API.Favourites(this);
   orders: API.Orders = new API.Orders(this);
   operations: API.Operations = new API.Operations(this);
   pricing: API.Pricing = new API.Pricing(this);
 }
 BookingCom.Hotels = Hotels;
+BookingCom.Favourites = Favourites;
 BookingCom.Orders = Orders;
 BookingCom.Operations = Operations;
 BookingCom.Pricing = Pricing;
@@ -726,6 +729,8 @@ export declare namespace BookingCom {
     type HotelListResponse as HotelListResponse,
     type HotelListParams as HotelListParams,
   };
+
+  export { Favourites as Favourites, type FavouriteListResponse as FavouriteListResponse };
 
   export {
     Orders as Orders,

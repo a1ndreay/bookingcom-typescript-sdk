@@ -17,6 +17,16 @@ Methods:
 - <code title="post /hotels/{hotelId}/favourite">client.hotels.favourite.<a href="./src/resources/hotels/favourite.ts">add</a>(hotelID) -> void</code>
 - <code title="delete /hotels/{hotelId}/favourite">client.hotels.favourite.<a href="./src/resources/hotels/favourite.ts">remove</a>(hotelID) -> void</code>
 
+# Favourites
+
+Types:
+
+- <code><a href="./src/resources/favourites.ts">FavouriteListResponse</a></code>
+
+Methods:
+
+- <code title="get /favourites">client.favourites.<a href="./src/resources/favourites.ts">list</a>() -> FavouriteListResponse</code>
+
 # Orders
 
 Types:

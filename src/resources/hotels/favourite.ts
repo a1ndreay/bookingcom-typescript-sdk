@@ -10,7 +10,7 @@ export class Favourite extends APIResource {
   /**
    * Add hotel to favourite
    */
-  add(hotelID: string, options?: RequestOptions): APIPromise<void> {
+  add(hotelID: number, options?: RequestOptions): APIPromise<void> {
     return this._client.post(path`/hotels/${hotelID}/favourite`, {
       ...options,
       headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),
@@ -20,7 +20,7 @@ export class Favourite extends APIResource {
   /**
    * Remove hotel from favourite
    */
-  remove(hotelID: string, options?: RequestOptions): APIPromise<void> {
+  remove(hotelID: number, options?: RequestOptions): APIPromise<void> {
     return this._client.delete(path`/hotels/${hotelID}/favourite`, {
       ...options,
       headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),

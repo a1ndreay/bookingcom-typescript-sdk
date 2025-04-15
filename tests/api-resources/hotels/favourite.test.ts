@@ -10,7 +10,7 @@ const client = new BookingCom({
 describe('resource favourite', () => {
   // skipped: tests are disabled for the time being
   test.skip('add', async () => {
-    const responsePromise = client.hotels.favourite.add('hotelId');
+    const responsePromise = client.hotels.favourite.add(0);
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -22,7 +22,7 @@ describe('resource favourite', () => {
 
   // skipped: tests are disabled for the time being
   test.skip('remove', async () => {
-    const responsePromise = client.hotels.favourite.remove('hotelId');
+    const responsePromise = client.hotels.favourite.remove(0);
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;

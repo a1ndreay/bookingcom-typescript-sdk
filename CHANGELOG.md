@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.0-alpha.16 (2025-04-15)
+
+Full Changelog: [v0.1.0-alpha.15...v0.1.0-alpha.16](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.15...v0.1.0-alpha.16)
+
+### Features
+
+* **api:** api update ([136fb93](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/136fb931a411e184f01fc3ee625bca0749e219a0))
+
+
+### Chores
+
+* **client:** minor internal fixes ([afeb93e](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/afeb93e12d13fade20b0553270b6a1d1b65e37d8))
+
 ## 0.1.0-alpha.15 (2025-04-14)
 
 Full Changelog: [v0.1.0-alpha.14...v0.1.0-alpha.15](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.14...v0.1.0-alpha.15)

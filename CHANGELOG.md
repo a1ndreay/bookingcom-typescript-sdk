@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.0-alpha.18 (2025-04-28)
+
+Full Changelog: [v0.1.0-alpha.17...v0.1.0-alpha.18](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.17...v0.1.0-alpha.18)
+
+### Features
+
+* **api:** manual updates ([531377c](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/531377c73fe59fe7aa3c129eda0ba1c5a5cc192b))
+
+
+### Chores
+
+* **ci:** add timeout thresholds for CI jobs ([0b8da1d](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/0b8da1dbc6d3147fb9e4bf0ce0b68facdb2276ff))
+* **ci:** only use depot for staging repos ([c5bb922](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/c5bb92253ded029dec49976b5bd0f1bb163592bc))
+* **internal:** codegen related update ([8ccef24](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/8ccef2455a7fb7c285cc25e6b8d2b8762b041485))
+* **perf:** faster base64 decoding ([458ecc9](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/458ecc9ace2840073e6b10c271991f3254730705))
+
 ## 0.1.0-alpha.17 (2025-04-15)
 
 Full Changelog: [v0.1.0-alpha.16...v0.1.0-alpha.17](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.16...v0.1.0-alpha.17)

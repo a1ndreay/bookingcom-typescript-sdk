@@ -30,7 +30,7 @@ import { isEmptyObj } from './internal/utils/values';
 import { HotelListParams, HotelListResponse, HotelRetrieveResponse, Hotels } from './resources/hotels/hotels';
 
 const environments = {
-  production: 'http://localhost:8080/v1',
+  production: 'https://dn0j3gz6uqdsusj.ru/api/v1',
   development: 'http://192.168.0.100:8080/v1',
   sandbox: 'http://192.168.43.213:8080/v1',
 };
@@ -46,7 +46,7 @@ export interface ClientOptions {
    * Specifies the environment to use for the API.
    *
    * Each environment maps to a different base URL:
-   * - `production` corresponds to `http://localhost:8080/v1`
+   * - `production` corresponds to `https://dn0j3gz6uqdsusj.ru/api/v1`
    * - `development` corresponds to `http://192.168.0.100:8080/v1`
    * - `sandbox` corresponds to `http://192.168.43.213:8080/v1`
    */
@@ -142,7 +142,7 @@ export class BookingCom {
    *
    * @param {string | null | undefined} [opts.accessToken=process.env['BOOKING_COM_API_KEY'] ?? null]
    * @param {Environment} [opts.environment=production] - Specifies the environment URL to use for the API.
-   * @param {string} [opts.baseURL=process.env['BOOKING_COM_BASE_URL'] ?? http://localhost:8080/v1] - Override the default base URL for the API.
+   * @param {string} [opts.baseURL=process.env['BOOKING_COM_BASE_URL'] ?? https://dn0j3gz6uqdsusj.ru/api/v1] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
    * @param {Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.

@@ -31,8 +31,7 @@ import { HotelListParams, HotelListResponse, HotelRetrieveResponse, Hotels } fro
 
 const environments = {
   production: 'https://dn0j3gz6uqdsusj.ru/api/v1',
-  development: 'http://192.168.0.100:8080/v1',
-  sandbox: 'http://192.168.43.213:8080/v1',
+  development: 'http://localhost:8080/v1',
 };
 type Environment = keyof typeof environments;
 
@@ -47,8 +46,7 @@ export interface ClientOptions {
    *
    * Each environment maps to a different base URL:
    * - `production` corresponds to `https://dn0j3gz6uqdsusj.ru/api/v1`
-   * - `development` corresponds to `http://192.168.0.100:8080/v1`
-   * - `sandbox` corresponds to `http://192.168.43.213:8080/v1`
+   * - `development` corresponds to `http://localhost:8080/v1`
    */
   environment?: Environment | undefined;
 

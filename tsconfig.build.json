@@ -6,7 +6,7 @@
     "rootDir": "./dist/src",
     "paths": {
       "booking.com-typescript/*": ["dist/src/*"],
-      "booking.com-typescript": ["dist/src/index.ts"],
+      "booking.com-typescript": ["dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.1.0-alpha.20 (2025-05-07)
+
+Full Changelog: [v0.1.0-alpha.19...v0.1.0-alpha.20](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.19...v0.1.0-alpha.20)
+
+### Features
+
+* **client:** add withOptions helper ([0dbf126](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/0dbf126078f491a1e9e898d5f63d72ca861af05e))
+
+
+### Chores
+
+* **client:** drop support for EOL node versions ([a6a9955](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/a6a9955dfa8a8ca62f15c7bf3941379b3b9848b7))
+* **internal:** codegen related update ([a8776cd](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/a8776cde844f3824da5f5751101f4ecfdc46d7e6))
+* **internal:** refactor utils ([48f3b7e](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/48f3b7e4cb289306f1a595234d3a1416af0a784c))
+* **internal:** share typescript helpers ([4d76509](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/4d76509519f3a257e0edf827494b9812a4d51c18))
+
+
+### Documentation
+
+* **readme:** fix typo ([9148e1a](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/9148e1a731b44f42f4399bfc82dcf47dc1199f3e))
+
 ## 0.1.0-alpha.19 (2025-04-28)
 
 Full Changelog: [v0.1.0-alpha.18...v0.1.0-alpha.19](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.18...v0.1.0-alpha.19)

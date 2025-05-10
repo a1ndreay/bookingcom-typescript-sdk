@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.21 (2025-05-10)
+
+Full Changelog: [v0.1.0-alpha.20...v0.1.0-alpha.21](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.20...v0.1.0-alpha.21)
+
+### Bug Fixes
+
+* **client:** always overwrite when merging headers ([a0ebd1e](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/a0ebd1e81c818fd93cab553b181c35a4f010e4c2))
+
 ## 0.1.0-alpha.20 (2025-05-07)
 
 Full Changelog: [v0.1.0-alpha.19...v0.1.0-alpha.20](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.19...v0.1.0-alpha.20)

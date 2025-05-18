@@ -1,6 +1,6 @@
 {
   "name": "booking.com-typescript",
-  "version": "0.1.0-alpha.20",
+  "version": "0.1.0-alpha.21",
   "description": "The official TypeScript library for the Booking Com API",
   "author": "Booking Com <feedback@booking.com>",
   "types": "dist/index.d.ts",
@@ -68,8 +68,5 @@
       "import": "./dist/*.mjs",
       "require": "./dist/*.js"
     }
-  },
-  "engines": {
-    "node": ">= 20"
   }
 }

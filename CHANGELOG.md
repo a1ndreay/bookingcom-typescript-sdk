@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.22 (2025-05-22)
+
+Full Changelog: [v0.1.0-alpha.21...v0.1.0-alpha.22](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.21...v0.1.0-alpha.22)
+
+### Chores
+
+* **docs:** grammar improvements ([374811f](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/374811f00276efcbc9f730f4de282fb6bd57ea94))
+
 ## 0.1.0-alpha.21 (2025-05-13)
 
 Full Changelog: [v0.1.0-alpha.20...v0.1.0-alpha.21](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.20...v0.1.0-alpha.21)

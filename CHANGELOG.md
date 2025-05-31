@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.0-alpha.22 (2025-05-31)
+
+Full Changelog: [v0.1.0-alpha.21...v0.1.0-alpha.22](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.21...v0.1.0-alpha.22)
+
+### Bug Fixes
+
+* compat with more runtimes ([423318e](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/423318ebc4f619c9bc0f66807891b10f12812e83))
+
+
+### Chores
+
+* **deps:** bump eslint-plugin-prettier ([beaa829](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/beaa82961d76088c54333607fa557866c45d0dd5))
+* **docs:** grammar improvements ([374811f](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/374811f00276efcbc9f730f4de282fb6bd57ea94))
+* improve publish-npm script --latest tag logic ([bdd1d73](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/bdd1d73726c8d98adfedbbed71ea41a257f03f77))
+* **internal:** update jest config ([4cf0aab](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/4cf0aab158724eee22b9ae663d379b0acdae3046))
+
 ## 0.1.0-alpha.21 (2025-05-13)
 
 Full Changelog: [v0.1.0-alpha.20...v0.1.0-alpha.21](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.20...v0.1.0-alpha.21)

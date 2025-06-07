@@ -27,13 +27,9 @@ const client = new BookingCom({
   environment: 'development', // defaults to 'production'
 });
 
-async function main() {
-  const hotels = await client.hotels.list();
+const hotels = await client.hotels.list();
 
-  console.log(hotels.hotels);
-}
-
-main();
+console.log(hotels.hotels);
 ```
 
 ### Request & Response types
@@ -49,11 +45,7 @@ const client = new BookingCom({
   environment: 'development', // defaults to 'production'
 });
 
-async function main() {
-  const hotels: BookingCom.HotelListResponse = await client.hotels.list();
-}
-
-main();
+const hotels: BookingCom.HotelListResponse = await client.hotels.list();
 ```
 
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.
@@ -66,19 +58,15 @@ a subclass of `APIError` will be thrown:
 
 <!-- prettier-ignore -->
 ```ts
-async function main() {
-  const hotels = await client.hotels.list().catch(async (err) => {
-    if (err instanceof BookingCom.APIError) {
-      console.log(err.status); // 400
-      console.log(err.name); // BadRequestError
-      console.log(err.headers); // {server: 'nginx', ...}
-    } else {
-      throw err;
-    }
-  });
-}
-
-main();
+const hotels = await client.hotels.list().catch(async (err) => {
+  if (err instanceof BookingCom.APIError) {
+    console.log(err.status); // 400
+    console.log(err.name); // BadRequestError
+    console.log(err.headers); // {server: 'nginx', ...}
+  } else {
+    throw err;
+  }
+});
 ```
 
 Error codes are as follows:

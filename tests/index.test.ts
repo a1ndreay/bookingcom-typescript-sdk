@@ -337,6 +337,31 @@ describe('instantiate client', () => {
       });
       expect(client.baseURL).toEqual('https://dn0j3gz6uqdsusj.ru/api/v1');
     });
+
+    test('in request options', () => {
+      const client = new BookingCom({ accessToken: 'My Access Token' });
+      expect(client.buildURL('/foo', null, 'http://localhost:5000/option')).toEqual(
+        'http://localhost:5000/option/foo',
+      );
+    });
+
+    test('in request options overridden by client options', () => {
+      const client = new BookingCom({
+        accessToken: 'My Access Token',
+        baseURL: 'http://localhost:5000/client',
+      });
+      expect(client.buildURL('/foo', null, 'http://localhost:5000/option')).toEqual(
+        'http://localhost:5000/client/foo',
+      );
+    });
+
+    test('in request options overridden by env variable', () => {
+      process.env['BOOKING_COM_BASE_URL'] = 'http://localhost:5000/env';
+      const client = new BookingCom({ accessToken: 'My Access Token' });
+      expect(client.buildURL('/foo', null, 'http://localhost:5000/option')).toEqual(
+        'http://localhost:5000/env/foo',
+      );
+    });
   });
 
   test('maxRetries option is correctly set', () => {

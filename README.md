@@ -1,6 +1,6 @@
 # Booking Com TypeScript API Library
 
-[![NPM version](https://img.shields.io/npm/v/booking.com-typescript.svg)](https://npmjs.org/package/booking.com-typescript) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/booking.com-typescript)
+[![NPM version](<https://img.shields.io/npm/v/booking.com-typescript.svg?label=npm%20(stable)>)](https://npmjs.org/package/booking.com-typescript) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/booking.com-typescript)
 
 This library provides convenient access to the Booking Com REST API from server-side TypeScript or JavaScript.
 

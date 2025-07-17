@@ -1,6 +1,6 @@
 # Booking Com TypeScript API Library
 
-[![NPM version](https://img.shields.io/npm/v/booking.com-typescript.svg)](https://npmjs.org/package/booking.com-typescript) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/booking.com-typescript)
+[![NPM version](<https://img.shields.io/npm/v/booking.com-typescript.svg?label=npm%20(stable)>)](https://npmjs.org/package/booking.com-typescript) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/booking.com-typescript)
 
 This library provides convenient access to the Booking Com REST API from server-side TypeScript or JavaScript.
 
@@ -27,13 +27,9 @@ const client = new BookingCom({
   environment: 'development', // defaults to 'production'
 });
 
-async function main() {
-  const hotels = await client.hotels.list();
+const hotels = await client.hotels.list();
 
-  console.log(hotels.hotels);
-}
-
-main();
+console.log(hotels.hotels);
 ```
 
 ### Request & Response types
@@ -49,11 +45,7 @@ const client = new BookingCom({
   environment: 'development', // defaults to 'production'
 });
 
-async function main() {
-  const hotels: BookingCom.HotelListResponse = await client.hotels.list();
-}
-
-main();
+const hotels: BookingCom.HotelListResponse = await client.hotels.list();
 ```
 
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.
@@ -66,19 +58,15 @@ a subclass of `APIError` will be thrown:
 
 <!-- prettier-ignore -->
 ```ts
-async function main() {
-  const hotels = await client.hotels.list().catch(async (err) => {
-    if (err instanceof BookingCom.APIError) {
-      console.log(err.status); // 400
-      console.log(err.name); // BadRequestError
-      console.log(err.headers); // {server: 'nginx', ...}
-    } else {
-      throw err;
-    }
-  });
-}
-
-main();
+const hotels = await client.hotels.list().catch(async (err) => {
+  if (err instanceof BookingCom.APIError) {
+    console.log(err.status); // 400
+    console.log(err.name); // BadRequestError
+    console.log(err.headers); // {server: 'nginx', ...}
+  } else {
+    throw err;
+  }
+});
 ```
 
 Error codes are as follows:
@@ -236,9 +224,8 @@ parameter. This library doesn't validate at runtime that the request matches the
 send will be sent as-is.
 
 ```ts
-client.foo.create({
-  foo: 'my_param',
-  bar: 12,
+client.hotels.list({
+  // ...
   // @ts-expect-error baz is not yet public
   baz: 'undocumented option',
 });

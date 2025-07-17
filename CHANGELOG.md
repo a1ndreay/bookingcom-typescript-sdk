@@ -1,5 +1,44 @@
 # Changelog
 
+## 0.1.0-alpha.22 (2025-07-17)
+
+Full Changelog: [v0.1.0-alpha.21...v0.1.0-alpha.22](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.21...v0.1.0-alpha.22)
+
+### Features
+
+* **client:** add support for endpoint-specific base URLs ([7c99168](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/7c99168abaf44bdebb749bf8f38bc999f29bb632))
+
+
+### Bug Fixes
+
+* **ci:** release-doctor — report correct token name ([7a39aff](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/7a39affca02260d885f031b824eb716706ac0cb2))
+* **client:** explicitly copy fetch in withOptions ([8831723](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/88317230735f2e3f3f252ab6beabd2932d2e4aef))
+* **client:** get fetchOptions type more reliably ([c82da2c](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/c82da2cc2f8434adcf9173cd720605b707410efb))
+* compat with more runtimes ([423318e](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/423318ebc4f619c9bc0f66807891b10f12812e83))
+* publish script — handle NPM errors correctly ([708ebc1](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/708ebc13f0123c3694d230a8fc059a8447678e2f))
+
+
+### Chores
+
+* add docs to RequestOptions type ([dae04e0](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/dae04e023eec1dc7d7f6427e9fd6ad29a8086137))
+* adjust eslint.config.mjs ignore pattern ([e830762](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/e8307622dcd16bad834674da38aa532a6d9c444c))
+* avoid type error in certain environments ([da64b9e](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/da64b9ef5d648e168e2743b60457ab5da7e04c78))
+* **ci:** enable for pull requests ([c9fb748](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/c9fb7488b6a836985f442eb65c612d5714363ad7))
+* **ci:** only run for pushes and fork pull requests ([45a541f](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/45a541f985857f4b4d4644b233e1e8b90578f03c))
+* **client:** improve path param validation ([b5328e6](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/b5328e6161aa19a110b4e2722f70d775322c9252))
+* **client:** refactor imports ([f49fc63](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/f49fc63b5e0dc74dc7a3d11dee13d6ee1927f5cd))
+* **deps:** bump eslint-plugin-prettier ([beaa829](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/beaa82961d76088c54333607fa557866c45d0dd5))
+* **docs:** grammar improvements ([374811f](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/374811f00276efcbc9f730f4de282fb6bd57ea94))
+* **docs:** use top-level-await in example snippets ([2df413c](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/2df413cbf17ee6f1a48c86bb69beb70920c6c4e4))
+* improve publish-npm script --latest tag logic ([bdd1d73](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/bdd1d73726c8d98adfedbbed71ea41a257f03f77))
+* **internal:** add pure annotations, make base APIResource abstract ([5ffebfc](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/5ffebfcbebd3aede0d20bdac966c5d89cbac6bc0))
+* **internal:** fix readablestream types in node 20 ([b103576](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/b10357631212600f1d5d8d6f344c5b8d868f3449))
+* **internal:** update jest config ([4cf0aab](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/4cf0aab158724eee22b9ae663d379b0acdae3046))
+* make some internal functions async ([6a207a8](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/6a207a8c850b4c899d985af75db251d53ff11421))
+* **readme:** update badges ([58c1526](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/58c1526dc224343f7102cd0a831ddae258fce388))
+* **readme:** use better example snippet for undocumented params ([72b95f6](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/72b95f65a5e596f6c87be959c945cc82949346c1))
+* **ts:** reorder package.json imports ([8ab5c97](https://github.com/a1ndreay/bookingcom-typescript-sdk/commit/8ab5c97ac5e9e5db99ca314484ed58777838f4a1))
+
 ## 0.1.0-alpha.21 (2025-05-13)
 
 Full Changelog: [v0.1.0-alpha.20...v0.1.0-alpha.21](https://github.com/a1ndreay/bookingcom-typescript-sdk/compare/v0.1.0-alpha.20...v0.1.0-alpha.21)
